@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "header"
+    "main";
+}
+
+header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#plus, #minus, input {
+    height: 25%;
+    width: 25%;
+    font-size: 24px;
+    text-align: center;
+    margin: 10%;
+}
+
+#plus, #minus {
+    font-size: 50px;
+    background-color: lightgray;
+    color: white;
+}
+
+input {
+    border-color: lightgray;
+}
+
+#plus:hover, #minus:hover {
+    background-color: transparent;
+    color: lightgray;
+}
